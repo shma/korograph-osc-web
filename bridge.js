@@ -16,6 +16,8 @@ io.sockets.on('connection', function (socket) {
     });
   });
   socket.on("message", function (obj) {
+
+      console.log(obj);
     oscClient.send(obj);
   });
 });
